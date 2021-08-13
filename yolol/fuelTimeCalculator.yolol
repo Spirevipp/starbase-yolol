@@ -1,0 +1,3 @@
+:FuelTime=:FuelChamberFuel/:FuelChamberUnitRate
+
+// panel or progress bar name = FuelTime

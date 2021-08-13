@@ -1,0 +1,12 @@
+n="\n" i=0 :scan="" IF:sense<1THEN:scan="OFF" GOTO1END :s=1
+IFi<:qt THEN:si=i :scan+=:mat+n i++ GOTO2END GOTO1
+
+//Stolen from YT vid, edited by me
+//PanelValue = Scan
+//ButtonState = sense
+//ButtonStyle = 1
+//Active = sense
+//Index = si
+//ScanResults = qt
+//Material = mat
+//Scan = s

@@ -1,0 +1,13 @@
+s=" " n="\n"
+if:sp<1 thengoto2end :i=0 j=0 :scan="\n\nScanning..." :s=1
+if:s and j<11 thenj++ goto3end x=n+:m+s+:v :i=1
+if:i>:qt thengoto5end :scan=x+n+:m+s+:v :sp=0 :s=0 :reset=1 goto2
+:scan="\n\n  No ores found" :sp=0 :s=0 :reset=1 goto2
+//panel = Scan
+//button = sp, style = 1
+//active = sp
+//index = i
+//ScanResults = qt
+//material = m
+//volume = v
+//scan = s

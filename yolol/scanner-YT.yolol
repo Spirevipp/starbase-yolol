@@ -1,0 +1,12 @@
+n="\n" itr=0 :scan="" IF :sense<1 THEN :scan="OFF" GOTO1 END :chk=1
+IF itr<:rslt THEN :idx=itr :scan+=:mat+n itr+=1 GOTO2 END GOTO1
+
+//Stolen from YT vid
+//PanelValue to Scan
+//ButtonState to sense
+//ButtonStyle to 1
+//Active to sense
+//Index to idx
+//ScanResults to rslt
+//Material to mat
+//Scan to chk

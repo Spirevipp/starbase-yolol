@@ -1,0 +1,13 @@
+reset=0 rate=100 IF:minEPSvalue>1thengoto3-reset end goto2-reset
+:GenLimit=(100-:Battery/rate)+:minEPS*75 goto2-reset
+:GenLimit=(100-:Battery/rate)+:minEPS goto3-reset
+//FuelChamberUnitRateLimit = GenLimit
+//StoredBatteryPower = Battery
+//buttonState = minEPS
+//ButtonOnStateValue = minEPSvalue (if applicable)
+//code will run correct calculation depending on your setup
+//setup buttons BEFORE atatching YOLOL to power
+//increase rate value for more power, decrease for less
+//running wrong line? set reset to >3 and code will jump to line 1
+//then set reset back to 0
+//FYI goto >20 will goto line 20, goto <1 will go to line 1
