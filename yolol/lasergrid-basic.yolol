@@ -1,0 +1,8 @@
+g=5 i=0
+if :Mine then :LX=:LXMIN :LY=:LYMIN goto3end goto2
+:Laser=1
+:YCO=:LYMAX :YCS=0.2 i=1 goto6
+:YCO=:LYMIN i=0 goto6
+if :LY==:LYMAX OR :LY==:LYMIN thengoto7end goto6
+if :LX<:LXMAX then :LX+=g goto4+i end
+:Laser=0 :Mine=0 :YCS=0 :LX=0 :LY=0 goto2

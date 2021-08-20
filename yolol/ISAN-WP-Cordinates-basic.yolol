@@ -1,0 +1,2 @@
+n="\n"
+:Waypoint=:wpnum+n+"X: "+:wX+n+"Y: "+:wY+n+"Z: "+:wZ goto2
