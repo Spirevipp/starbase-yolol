@@ -1,2 +1,5 @@
 n="\n"
 :Waypoint=:wpnum+n+"X: "+:wX+n+"Y: "+:wY+n+"Z: "+:wZ goto2
+
+// for use with
+// https://github.com/Archaegeo/Starbase/tree/main/ISAN-Waypoint%20System
